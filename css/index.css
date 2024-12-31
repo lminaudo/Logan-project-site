@@ -1,37 +1,55 @@
 @font-face {
-    font-family: FunnelSans;
-    src: url(./fonts/FunnelSans-VariableFont_wght.ttf);
-    font-weight: 200 300;
+    font-family: 'FunnelSans';
+    src: url('./fonts/FunnelSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 900; /* Adjusted to support a full range of weights */
 }
-nav{
+
+html {
+    font-family: 'FunnelSans', sans-serif; /* Added fallback font */
+    height: auto;
+    background: linear-gradient(to bottom right, rgb(120, 120, 120), white);
+    min-height: 100%;
+}
+
+body {
+    margin: 1.25%;
+}
+
+header {
+    text-align: center;
+    padding: 0; /* Added padding for spacing */
+    font-size: large;
+}
+h1.headline{
+        font-size: 2em;
+        margin-block-end: -.25em;
+}
+header.p{
+    text-align: center;
+    padding: 0rem 0; /* Added padding for spacing */
+    font-size: large;
+}
+
+nav {
+    font-family: 'FunnelSans', sans-serif;
+    font-weight: 500;
     display: flex;
     justify-content: center;
-    background-color: linear-gradient();
-    padding: .5rem;
+    padding: 0.0rem;
+    font-size: large;
 }
-nav a{
-    margin: 0 1 rem;
-    color: white;
-    font-weight: bold;
-    padding: .05rem 1rem;
-    border-radius: 5px;
-}
-nav a:hover{
-    font-family: FunnelSans;
-    background-color: blue;
-}
-header{
-    display: inline;
-    text-align: center;
 
+nav a {
+    margin: 0 1.5rem; /* Fixed spacing issue (removed extra space in "1 rem") */
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
+    text-decoration: none; /* Ensure links don’t have underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-weight: 900;
 }
-html{
-    font-family: FunnelSans;
-    height: auto;
-    background: linear-gradient(to bottom right, grey, silver);
-    min-height: 100vh;
-}
-body{
-    margin: 0;
-    padding: 0;
+
+nav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(170, 170, 170);
 }
