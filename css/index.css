@@ -1,3 +1,8 @@
+@font-face {
+    font-family: FunnelSans;
+    src: url(./fonts/FunnelSans-VariableFont_wght.ttf);
+    font-weight: 200 300;
+}
 nav{
     display: flex;
     justify-content: center;
@@ -10,9 +15,9 @@ nav a{
     font-weight: bold;
     padding: .05rem 1rem;
     border-radius: 5px;
-    /* transition: background-color .3s ease; */
 }
 nav a:hover{
+    font-family: FunnelSans;
     background-color: blue;
 }
 header{
@@ -21,7 +26,7 @@ header{
 
 }
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: FunnelSans;
     height: auto;
     background: linear-gradient(to bottom right, grey, silver);
     min-height: 100vh;
