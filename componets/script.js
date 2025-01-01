@@ -16,5 +16,4 @@ function loadContent(targetSection, filePath){
 }
 document.addEventListener("DOMContentLoaded", ()=>{
     loadContent("header", "componets/header.html")
-    loadContent("head", "componets/head.html")
 })
