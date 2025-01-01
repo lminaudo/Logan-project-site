@@ -32,7 +32,6 @@ header.p{
 
 nav {
     font-family: 'FunnelSans', sans-serif;
-    font-weight: 500;
     display: flex;
     justify-content: center;
     padding: 0.0rem;
@@ -42,11 +41,10 @@ nav {
 nav a {
     margin: 0 1.5rem; /* Fixed spacing issue (removed extra space in "1 rem") */
     color: black;
-    font-weight: bold;
     border-radius: 3px;
     text-decoration: none; /* Ensure links don’t have underline */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-    font-weight: 900;
+    font-weight: 800;
 }
 
 nav a:hover {
