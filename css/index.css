@@ -51,16 +51,21 @@ nav a:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(170, 170, 170);
 }
-
+/* Default state (no animation, fully visible by default) */
 .experience {
-    transform: scale(1,2);
+    opacity: 1; /* Default visibility for browsers without animation */
+    transform: scale(1); /* Default scale */
 }
-@media(prefers-reduced-motion: no-preference){
-    .square{
-        transition: opacity 1.5s ease, transform 1.5s ease;
-    }
+
+/* Initial animation state (applied by JavaScript) */
+.experience.hidden {
+    opacity: 0;
+    transform: scale(0.9); /* Slightly shrunk initial state */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-.square-transition{
+
+/* Animation active (applied by JavaScript) */
+.experience.visible {
     opacity: 1;
-    transform: none;
+    transform: scale(1); /* Full size */
 }
