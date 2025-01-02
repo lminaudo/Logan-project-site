@@ -52,22 +52,20 @@ nav a:hover {
     color: rgb(170, 170, 170);
 }
 /* Default state (no animation, fully visible by default) */
-.experience {
-    opacity: 1; /* Default visibility for browsers without animation */
-    transform: scale(1); /* Default scale */
+.experience.default {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 /* Initial animation state (applied by JavaScript) */
 .experience.hidden {
     opacity: 0;
-    transform: scale(0.5); /* Slightly shrunk initial state */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: scale(0.5);
 }
 
 /* Animation active (applied by JavaScript) */
 .experience.visible {
     opacity: 1;
-    transform: scale(1); /* Full size */
-    transition: opacity 0.8s ease-in, transform 0.8s ease-in;
-    transition-delay: 0.5s; /* Add delay for staggered effect */
+    transform: scale(1);
 }

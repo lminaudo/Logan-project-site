@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
             observer.disconnect(); // Stop observing once elements are found
 
             // Add the `hidden` class to all elements before checking visibility
-            experiences.forEach((exp) => exp.classList.add("hidden"));
+            experiences.forEach((exp) => {
+                exp.classList.remove("default"); 
+                exp.classList.add("hidden");});
 
             // Function to check if elements are in the viewport
             const isInViewport = (element) => {
