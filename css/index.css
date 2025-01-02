@@ -36,7 +36,6 @@ nav {
     justify-content: center;
     padding: 0.0rem;
     font-size: large;
-    padding: 0px 5px;
 }
 
 nav a {
@@ -46,7 +45,7 @@ nav a {
     text-decoration: none; /* Ensure links don’t have underline */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
     font-weight: 800;
-    width: 60%;
+    padding: 0px 7px;
 }
 
 nav a:hover {
