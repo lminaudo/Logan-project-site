@@ -60,8 +60,9 @@ nav a:hover {
 /* Initial animation state (applied by JavaScript) */
 .experience.hidden {
     opacity: 0;
-    transform: scale(0.9); /* Slightly shrunk initial state */
+    transform: scale(0.5); /* Slightly shrunk initial state */
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: 0.5s; /* Add delay for staggered effect */
 }
 
 /* Animation active (applied by JavaScript) */
