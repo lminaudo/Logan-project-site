@@ -16,10 +16,7 @@ function loadContent(targetSection, filePath){
 }
 document.addEventListener("DOMContentLoaded", ()=>{
     loadContent("header", "componets/header.html")
-})
 
-// Wait for the DOM to load
-document.addEventListener("DOMContentLoaded", () => {
     const experiences = document.querySelectorAll(".experience");
 
     // Add the `hidden` class to all elements before checking visibility
