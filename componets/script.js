@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadContent("header", "componets/header.html", () => {
         console.log("Header loaded successfully.");
     });
-    const projects = document.querySelectorAll(".experience");
+    const zoomanimation = document.querySelectorAll(".zoomanimation");
 
     const isInViewport = (element) => {
         const rect = element.getBoundingClientRect();
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const animateProjects = () => {
-        projects.forEach((project) => {
+        zoomanimation.forEach((project) => {
             if (isInViewport(project)) {
                 project.classList.add("visible");
             }

@@ -53,13 +53,13 @@ nav a:hover {
     color: rgb(170, 170, 170);
 }
 
-.experience {
+.zoomanimation{
     opacity: 0;
     transform: scale(0.75);
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
-.experience.visible {
+.zoomanimation.visible {
     opacity: 1;
     transform: scale(1);
 }
