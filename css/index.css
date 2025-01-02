@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(150, 150, 150);
     color: rgb(0, 0, 0);
 }
 .button-container {
