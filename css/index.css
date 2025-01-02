@@ -51,21 +51,14 @@ nav a:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(170, 170, 170);
 }
-/* Default state (no animation, fully visible by default) */
-.experience.default {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
-/* Initial animation state (applied by JavaScript) */
-.experience.hidden {
+.project {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Animation active (applied by JavaScript) */
-.experience.visible {
+.project.visible {
     opacity: 1;
     transform: scale(1);
 }

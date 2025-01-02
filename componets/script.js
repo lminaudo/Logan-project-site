@@ -20,47 +20,25 @@ document.addEventListener("DOMContentLoaded", () => {
     loadContent("header", "componets/header.html", () => {
         console.log("Header loaded successfully.");
     });
+    const projects = document.querySelectorAll(".experience");
 
-    // Observe the DOM for changes to detect `.experience` elements
-    const observer = new MutationObserver(() => {
-        const experiences = document.querySelectorAll(".experience");
-        if (experiences.length > 0) {
-            console.log("Experience elements found:", experiences.length);
-            observer.disconnect(); // Stop observing once elements are found
+    const isInViewport = (element) => {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0;
+    };
 
-            // Add the `hidden` class to all elements before checking visibility
-            experiences.forEach((exp) => {
-                exp.classList.remove("default"); 
-                exp.classList.add("hidden");});
+    const animateProjects = () => {
+        projects.forEach((project) => {
+            if (isInViewport(project)) {
+                project.classList.add("visible");
+            }
+            else{
+                project.classList.add("visible");
+                project.classList.remove("visible");
+            }
+        });
+    };
 
-            // Function to check if elements are in the viewport
-            const isInViewport = (element) => {
-                const rect = element.getBoundingClientRect();
-                return rect.top < window.innerHeight && rect.bottom >= 0;
-            };
-
-            const animateExperience = () => {
-                experiences.forEach((exp) => {
-                    if (isInViewport(exp)) {
-                        exp.classList.add("visible");
-                        exp.classList.remove("hidden");
-                    }
-                });
-            };
-
-            // Trigger animation on load and on scroll
-            animateExperience();
-            window.addEventListener("scroll", animateExperience);
-
-            // Fallback: Ensure all elements are visible after a delay if JavaScript fails
-            setTimeout(() => {
-                experiences.forEach((exp) => {
-                    exp.classList.remove("hidden");
-                });
-            }, 1000);
-        }
-    });
-
-    // Start observing the body for added child nodes
-    observer.observe(document.body, { childList: true, subtree: true });
+    animateProjects();
+    window.addEventListener("scroll", animateProjects);
 });
