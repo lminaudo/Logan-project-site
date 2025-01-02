@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", () => {
-    const experiences = document.querySelectorAll("experience");
+    const experiences = document.querySelectorAll(".experience");
 
     // Add the `hidden` class to all elements before checking visibility
     experiences.forEach((exp) => exp.classList.add("hidden"));
