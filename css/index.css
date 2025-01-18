@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FunnelSans';
-    src: url('fonts/FunnelSans-VariableFont_wght.ttf') format('truetype');
+    src: url('/css/fonts/FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 200 900; /* Adjusted to support a full range of weights */
 }
 
