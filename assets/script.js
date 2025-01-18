@@ -17,8 +17,11 @@ function loadContent(targetSection, filePath, callback = null) {
 
 document.addEventListener("DOMContentLoaded", () => {
     // Load header dynamically
-    loadContent("header", "componets/header.html", () => {
+    loadContent("header", "assets/header.html", () => {
         console.log("Header loaded successfully.");
+    });
+    loadContent("footer", "assets/footer.html", () => {
+        console.log("Footer loaded successfully.");
     });
     const zoomanimation = document.querySelectorAll(".zoomanimation");
 
