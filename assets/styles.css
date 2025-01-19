@@ -391,7 +391,7 @@ a:hover {
   gap: 1.5rem;
   margin-block-start: 0.5rem;
   padding: 20px 10px;
-  border-style: none none solid none;
+  border-style: solid none solid none;
   padding: 0.5rem;
   border-color: #1a1a1a;
 }
