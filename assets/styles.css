@@ -334,9 +334,9 @@ a:hover {
 .main-header {
   color: #1a1a1a;
   padding: 20px 10px;
-  border-style: none none solid none;
+  /* border-style: none none solid none;
   padding: 0.5rem;
-  border-color: #1a1a1a;
+  border-color: #1a1a1a; */
 }
 
 .container {
@@ -390,6 +390,10 @@ a:hover {
   display: flex;
   gap: 1.5rem;
   margin-block-start: 0.5rem;
+  padding: 20px 10px;
+  border-style: none none solid none;
+  padding: 0.5rem;
+  border-color: #1a1a1a;
 }
 
 .main-nav a {
