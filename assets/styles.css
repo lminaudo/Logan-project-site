@@ -21,52 +21,8 @@ body {
     margin: 1.25%;
 }
 
-header {
-    text-align: center;
-    padding: 0;
-    /* Added padding for spacing */
-    font-size: large;
-}
 
-h1.headline {
-    font-size: 2em;
-    margin-block-end: -.25em;
-}
-
-header.p {
-    text-align: center;
-    padding: 0rem 0;
-    /* Added padding for spacing */
-    font-size: large;
-}
-
-nav {
-    font-family: 'FunnelSans', sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 0.0rem;
-    font-size: large;
-}
-
-nav a {
-    margin: 0 1.5rem;
-    /* Fixed spacing issue (removed extra space in "1 rem") */
-    color: black;
-    border-radius: 3px;
-    text-decoration: none;
-    /* Ensure links don’t have underline */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Smooth transition */
-    font-weight: 800;
-    padding: 0px 6px;
-}
-
-nav a:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(170, 170, 170);
-}
-
-.zoomanimation {
+/* .zoomanimation {
     opacity: 0;
     transform: scale(0.75);
     transition: opacity 0.9s ease, transform 0.9s ease;
@@ -75,7 +31,7 @@ nav a:hover {
 .zoomanimation.visible {
     opacity: 1;
     transform: scale(1);
-}
+} */
 
 .button {
     display: inline-block;
@@ -99,8 +55,6 @@ nav a:hover {
     margin-top: 20px;
     /* Add spacing from content above */
 }
-
-
 
 .project-list {
     display: flex;
@@ -162,21 +116,23 @@ footer .social-links a:hover {
     text-decoration: underline;
 }
 
-#hero{
+#hero {
     text-align: center;
     padding: 1rem 2rem;
 }
-#hero .hero-content h1{
+
+#hero .hero-content h1 {
     font-size: 2.5rem;
     color: #333;
 }
-#hero .hero-content p{
+
+#hero .hero-content p {
     font-size: 1.2rem;
     margin: 1rem 0;
     color: #555;
 }
 
-.cta{
+.cta {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     margin: 1rem;
@@ -185,15 +141,17 @@ footer .social-links a:hover {
     text-decoration: none;
     border-radius: 5px;
 }
-.cta.secondary{
+
+.cta.secondary {
     background-color: #555;
 }
 
-#skills{
+#skills {
     text-align: center;
     padding: 1rem 1rem 0;
 }
-.skills-grid{
+
+.skills-grid {
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -201,22 +159,21 @@ footer .social-links a:hover {
     flex-wrap: wrap;
 }
 
-.skill{
+.skill {
     text-align: center;
     max-width: 100px;
 }
 
-.skill img{
+.skill img {
     width: 50px;
     height: 50px;
     margin-bottom: 0.25rem;
 }
 
-#about-preview{
+#about-preview {
     text-align: center;
     padding: 1rem 2rem;
 }
-
 
 /* About Section Styling */
 #about {
@@ -336,4 +293,80 @@ a:hover {
 
 .contact-list a:hover {
     text-decoration: underline;
+}
+
+/* Header Styling */
+.main-header {
+    /* background-color: #1a1a1a; Dark background for contrast */
+    color: #1a1a1a; /* White text */
+    padding: 20px 10px;
+    /* border-color: #222; */
+    border-style: none none solid none;
+    padding: .5rem;
+    border-color: #1a1a1a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Headline and Subheadline */
+.headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subheadline {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: .75rem 0 20px;
+    color: #222; /* Softer text for subtitle */
+}
+
+/* Navigation Styling */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 0.25s ease, color .15s ease;
+    font-weight: bolder;
+    margin: 0 1.5rem;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+}
+
+.main-nav a:hover {
+    color: #fff; /* Highlight color for hover effect */
+    background: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2rem;
+    }
+
+    .subheadline {
+        font-size: 1rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
