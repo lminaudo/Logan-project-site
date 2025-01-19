@@ -332,22 +332,41 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: space-between;
+  padding: 0.5rem; /* Adjusted padding */
+}
+
+/* Logo container */
+.logo {
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: auto; /* Constrain height naturally */
+}
+
+/* Logo image */
+.logo img {
+  display: block; /* Removes inline spacing */
+  margin: 0; /* Remove any extra margins */
+  padding: 0; /* Remove any extra padding */
 }
 
 /* Headline and Subheadline */
-.headline {
+/* .headline {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
-}
-
+} */
+/* 
 .subheadline {
   font-size: 1.25rem;
   font-weight: 400;
   margin: 0.75rem 0 20px;
   color: #222;
-  /* Softer text for subtitle */
-}
+  /* Softer text for subtitle
+} */
 
 /* Navigation Styling */
 .main-nav ul {
@@ -389,5 +408,17 @@ a:hover {
   .main-nav ul {
     flex-direction: column;
     gap: 1rem;
+  }
+  .container {
+    padding: 1rem; /* Increase padding for smaller screens */
+  }
+
+  .logo img {
+    max-width: 14rem; /* Slightly smaller logo for tablets */
+  }
+}
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 10rem; /* Further reduce logo size for mobile */
   }
 }
