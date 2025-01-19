@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <script>
-            // Set base href dynamically
-            const isGitHubPages = window.location.hostname === "lminaudo.github.io";
-            const repoName = "logan-portfolio-site";
-            const basePath = isGitHubPages ? `/${repoName}/` : "/";
-            document.write(`<base href="${basePath}">`);
-        </script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Portfolio of a Software Engineer specializing in IT, embedded systems, and software development.">
-        <title>Logan Minaudo Portfolio</title>
-        <link rel="stylesheet" href="assets/styles.css">
-        <script src="assets/script.js"></script>
-        <link rel="icon" type="image/x-icon" href="/assets/svg/2.ico">
-    </head>
+  <head>
+    <script>
+      // Set base href dynamically
+      const isGitHubPages = window.location.hostname === "lminaudo.github.io";
+      const repoName = "logan-portfolio-site";
+      const basePath = isGitHubPages ? `/${repoName}/` : "/";
+      document.write(`<base href="${basePath}">`);
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="Portfolio of a Software Engineer specializing in IT, embedded systems, and software development." />
+    <title>Logan Minaudo Portfolio</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/svg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/svg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/svg/favicon-16x16.png">
+    <link rel="manifest" href="assets/svg/site.webmanifest">
+  </head>
 
-    <body>
-        <!-- Include Header -->
-        <header class="main-header"></header>
+  <body>
+    <!-- Include Header -->
+    <header class="main-header"></header>
 
-        <div class="project-header">
-            <h2>Projects & Experience</h2>
-            <p>Explore some of my most impactful and innovative projects, showcasing my skills in software development,
-                IT solutions, and embedded systems.</p>
-        </div>
+    <div class="project-header">
+      <h2>Projects & Experience</h2>
+      <p>
+        Explore some of my most impactful and innovative projects, showcasing my
+        skills in software development, IT solutions, and embedded systems.
+      </p>
+    </div>
 
-        <div class="project-list">
-            <!-- EPCC Projects -->
-            <div class="project-card">
-                <h3>Software Engineer - Electric Power Conversion Control</h3>
-                <p>Unified software streams, enhanced EV/PHEV algorithms, and resolved software dependencies, ensuring
-                    compliance with industry standards. Conducted HIL testing and developed robust unit test cases.</p>
-                <ul class="technologies">
-                    <li>C/C++</li>
-                    <li>HIL Bench</li>
-                </ul>
-            </div>
+    <div class="project-list">
+      <!-- EPCC Projects -->
+      <div class="project-card">
+        <h3>Software Engineer - Electric Power Conversion Control</h3>
+        <p>
+          Unified software streams, enhanced EV/PHEV algorithms, and resolved
+          software dependencies, ensuring compliance with industry standards.
+          Conducted HIL testing and developed robust unit test cases.
+        </p>
+        <ul class="technologies">
+          <li>C/C++</li>
+          <li>HIL Bench</li>
+        </ul>
+      </div>
 
-            <!-- SAP Projects -->
-            <div class="project-card">
-                <h3>Software Engineer - SAP ABAP</h3>
-                <p>Streamlined tax calculations and enhanced the VELO module with custom tax reports and global
-                    accounting interfaces, improving documentation and reporting.</p>
-                <ul class="technologies">
-                    <li>SQL</li>
-                    <li>ABAP</li>
-                </ul>
-            </div>
+      <!-- SAP Projects -->
+      <div class="project-card">
+        <h3>Software Engineer - SAP ABAP</h3>
+        <p>
+          Streamlined tax calculations and enhanced the VELO module with custom
+          tax reports and global accounting interfaces, improving documentation
+          and reporting.
+        </p>
+        <ul class="technologies">
+          <li>SQL</li>
+          <li>ABAP</li>
+        </ul>
+      </div>
 
-            <!-- Human Exploration Rover Challenge Dashboard -->
-            <div class="project-card">
-                <h3>Lead Software Capstone Project - Human Exploration Rover Challenge Dashboard</h3>
-                <p>Developed a real-time data visualization platform for NASA's Rover Challenge, leveraging AWS,
-                    Raspberry Pi, and Python to monitor competition metrics live.</p>
-                <ul class="technologies">
-                    <li>AWS</li>
-                    <li>Raspberry Pi</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML/CSS</li>
-                </ul>
-            </div>
-        </div>
-        <footer></footer>
-
-    </body>
+      <!-- Human Exploration Rover Challenge Dashboard -->
+      <div class="project-card">
+        <h3>
+          Lead Software Capstone Project - Human Exploration Rover Challenge
+          Dashboard
+        </h3>
+        <p>
+          Developed a real-time data visualization platform for NASA's Rover
+          Challenge, leveraging AWS, Raspberry Pi, and Python to monitor
+          competition metrics live.
+        </p>
+        <ul class="technologies">
+          <li>AWS</li>
+          <li>Raspberry Pi</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
 
 </html>
