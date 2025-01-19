@@ -1,65 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script>
-        // Set base href dynamically
-        const isGitHubPages = window.location.hostname === "lminaudo.github.io";
-        const repoName = "logan-portfolio-site";
-        const basePath = isGitHubPages ? `/${repoName}/` : "/";
-        document.write(`<base href="${basePath}">`);
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of a Software Engineer specializing in IT, embedded systems, and software development.">
-    <title>Logan Minaudo Portfolio</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/script.js"></script>
-<body>
-    <!-- Include Header -->
-   <header></header>
 
-   <section id="about">
-    <div class="about-container">
-        <h2>About Me</h2>
-        <div class="about-intro">
-            <img src="assets/svg/profile.jpeg" alt="Logan Minaudo" class="profile-pic">
-            <p>Hello, I'm <strong>Logan Minaudo</strong>, a Software Engineer specializing in IT solutions, embedded systems, and software development. I thrive on creating efficient, user-focused solutions for complex technical challenges while continuously learning and innovating.</p>
-        </div>
+    <head>
+        <script>
+            // Set base href dynamically
+            const isGitHubPages = window.location.hostname === "lminaudo.github.io";
+            const repoName = "logan-portfolio-site";
+            const basePath = isGitHubPages ? `/${repoName}/` : "/";
+            document.write(`<base href="${basePath}">`);
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Portfolio of a Software Engineer specializing in IT, embedded systems, and software development.">
+        <title>Logan Minaudo Portfolio</title>
+        <link rel="stylesheet" href="assets/styles.css">
+        <script src="assets/script.js"></script>
 
-        <div class="about-details">
-            <h3>What Drives Me</h3>
-            <p>I’m passionate about solving real-world problems through technology—streamlining processes, enhancing user experiences, and engineering solutions that power the future. My goal is to leave a meaningful impact with every project I undertake.</p>
+    <body>
+        <!-- Include Header -->
+        <header class="main-header"></header>
 
-            <h3>Expertise</h3>
-            <ul class="expertise-list">
-                <li><strong>Embedded Systems:</strong> Seamless hardware-software integration.</li>
-                <li><strong>IT Solutions:</strong> Building and maintaining robust, scalable infrastructures.</li>
-                <li><strong>Software Development:</strong> Crafting maintainable, high-performance applications.</li>
-            </ul>
+        <section id="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <div class="about-intro">
+                    <img src="assets/svg/profile.jpeg" alt="Logan Minaudo" class="profile-pic">
+                    <p>Hello, I'm <strong>Logan Minaudo</strong>, a Software Engineer specializing in IT solutions,
+                        embedded systems, and software development. I thrive on creating efficient, user-focused
+                        solutions for complex technical challenges while continuously learning and innovating.</p>
+                </div>
 
-            <h3>Highlighted Projects</h3>
-            <ul class="projects-list">
-                <li>
-                    <strong>EPCC Projects:</strong> Unified software streams to ensure compliance with GM and industry standards. Enhanced EV/PHEV algorithms, conducted HIL testing, and resolved software dependencies.
-                    <br><em>Technologies:</em> C/C++, HIL Bench
-                </li>
-                <li>
-                    <strong>SAP Projects:</strong> Optimized tax calculations and streamlined documentation for the VELO module. Developed global accounting interfaces, custom tax reports, and extended payment letter functionalities.
-                    <br><em>Technologies:</em> SQL, ABAP
-                </li>
-                <li>
-                    <strong>NASA Rover Challenge Dashboard:</strong> Built a real-time data visualization and monitoring platform for NASA's Rover Challenge. Designed using AWS, Raspberry Pi, and Python to collect and display competition metrics live.
-                    <br><em>Technologies:</em> AWS, Raspberry Pi, Python, JavaScript, HTML/CSS, SQL
-                </li>
-            </ul>
+                <div class="about-details">
+                    <h3>What Drives Me</h3>
+                    <p>I’m passionate about solving real-world problems through technology—streamlining processes,
+                        enhancing user experiences, and engineering solutions that power the future. My goal is to leave
+                        a meaningful impact with every project I undertake.</p>
 
-            <p>Explore more of my <a href="projects/">Projects</a>, and feel free to <a href="contact/">reach out</a> if you'd like to collaborate or learn more about my experience!</p>
-        </div>
-    </div>
-</section>
+                    <h3>Expertise</h3>
+                    <ul class="expertise-list">
+                        <li><strong>Embedded Systems:</strong> Seamless hardware-software integration.</li>
+                        <li><strong>IT Solutions:</strong> Building and maintaining robust, scalable infrastructures.
+                        </li>
+                        <li><strong>Software Development:</strong> Crafting maintainable, high-performance applications.
+                        </li>
+                    </ul>
+
+                    <h3>Highlighted Projects</h3>
+                    <ul class="projects-list">
+                        <li>
+                            <strong>EPCC Projects:</strong> Unified software streams to ensure compliance with GM and
+                            industry standards. Enhanced EV/PHEV algorithms, conducted HIL testing, and resolved
+                            software dependencies.
+                            <br><em>Technologies:</em> C/C++, HIL Bench
+                        </li>
+                        <li>
+                            <strong>SAP Projects:</strong> Optimized tax calculations and streamlined documentation for
+                            the VELO module. Developed global accounting interfaces, custom tax reports, and extended
+                            payment letter functionalities.
+                            <br><em>Technologies:</em> SQL, ABAP
+                        </li>
+                        <li>
+                            <strong>NASA Rover Challenge Dashboard:</strong> Built a real-time data visualization and
+                            monitoring platform for NASA's Rover Challenge. Designed using AWS, Raspberry Pi, and Python
+                            to collect and display competition metrics live.
+                            <br><em>Technologies:</em> AWS, Raspberry Pi, Python, JavaScript, HTML/CSS, SQL
+                        </li>
+                    </ul>
+
+                    <p>Explore more of my <a href="projects/">Projects</a>, and feel free to <a href="contact/">reach
+                            out</a> if you'd like to collaborate or learn more about my experience!</p>
+                </div>
+            </div>
+        </section>
 
 
-    <footer></footer>
+        <footer></footer>
 
-</body>
+    </body>
+
 </html>

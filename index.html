@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script>
-        // Set base href dynamically
-        const isGitHubPages = window.location.hostname === "lminaudo.github.io";
-        const repoName = "logan-portfolio-site";
-        const basePath = isGitHubPages ? `/${repoName}/` : "/";
-        document.write(`<base href="${basePath}">`);
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of a Software Engineer specializing in IT, embedded systems, and software development.">
-    <title>Logan Minaudo Portfolio</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/script.js"></script>
-</head>
-<body>
-    <!-- Include Header -->
-   <header></header>
 
-<section id="hero">
-    <div class="hero-content">
-        <h1>Hello, I'm Logan Minaudo</h1>
-        <p>Software Engineer specializing in IT solutions, embedded systems, and innovative software development.</p>
-        <a href="projects/" class="cta">View My Projects</a>
-        <a href="contact/" class="cta secondary">Get in Touch</a>
-    </div>
-</section>
+    <head>
+        <script>
+            // Set base href dynamically
+            const isGitHubPages = window.location.hostname === "lminaudo.github.io";
+            const repoName = "logan-portfolio-site";
+            const basePath = isGitHubPages ? `/${repoName}/` : "/";
+            document.write(`<base href="${basePath}">`);
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Portfolio of a Software Engineer specializing in IT, embedded systems, and software development.">
+        <title>Logan Minaudo Portfolio</title>
+        <link rel="stylesheet" href="assets/styles.css">
+        <script src="assets/script.js"></script>
+    </head>
 
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-        <div class="skill">
-            <img src="assets/svg/code.svg" alt="Programming">
-            <p>C/C++, Python, ABAP, HTML, JavaScript</p>
-        </div>
-        <div class="skill">
-            <img src="assets/svg/database.svg" alt="Database">
-            <p>MySQL, SAP HANA</p>
-        </div>
-        <div class="skill">
-            <img src="assets/svg/clouds.svg" alt="Cloud Computing">
-            <p>Google Cloud, AWS, Embedded Systems</p>
-        </div>
-        <div class="skill">
-            <img src="assets/svg/check.svg" alt="Testing">
-            <p>HIL Testing, Unit Testing</p>
-        </div>
-    </div>
-</section>
+    <body>
+        <!-- Include Header -->
+        <header class="main-header"></header>
 
-<section id="about-preview">
-    <h2>About Me</h2>
-    <p>I'm passionate about solving real-world problems through technology. My work spans embedded systems, IT solutions, and building efficient, user-friendly software. Let's collaborate to make an impact!</p>
-    <a href="about/" class="cta">Learn More</a>
-</section>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm Logan Minaudo</h1>
+                <p>Software Engineer specializing in IT solutions, embedded systems, and innovative software
+                    development.</p>
+                <a href="projects/" class="cta">View My Projects</a>
+                <a href="contact/" class="cta secondary">Get in Touch</a>
+            </div>
+        </section>
 
-<footer></footer>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="assets/svg/code.svg" alt="Programming">
+                    <p>C/C++, Python, ABAP, HTML, JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/svg/database.svg" alt="Database">
+                    <p>MySQL, SAP HANA</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/svg/clouds.svg" alt="Cloud Computing">
+                    <p>Google Cloud, AWS, Embedded Systems</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/svg/check.svg" alt="Testing">
+                    <p>HIL Testing, Unit Testing</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-preview">
+            <h2>About Me</h2>
+            <p>I'm passionate about solving real-world problems through technology. My work spans embedded systems, IT
+                solutions, and building efficient, user-friendly software. Let's collaborate to make an impact!</p>
+            <a href="about/" class="cta">Learn More</a>
+        </section>
+
+        <footer></footer>
 
 
-</body>
+    </body>
+
 </html>

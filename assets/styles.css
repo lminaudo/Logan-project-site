@@ -298,7 +298,8 @@ a:hover {
 /* Header Styling */
 .main-header {
     /* background-color: #1a1a1a; Dark background for contrast */
-    color: #1a1a1a; /* White text */
+    color: #1a1a1a;
+    /* White text */
     padding: 20px 10px;
     /* border-color: #222; */
     border-style: none none solid none;
@@ -326,7 +327,8 @@ a:hover {
     font-size: 1.25rem;
     font-weight: 400;
     margin: .75rem 0 20px;
-    color: #222; /* Softer text for subtitle */
+    color: #222;
+    /* Softer text for subtitle */
 }
 
 /* Navigation Styling */
@@ -351,7 +353,8 @@ a:hover {
 }
 
 .main-nav a:hover {
-    color: #fff; /* Highlight color for hover effect */
+    color: #fff;
+    /* Highlight color for hover effect */
     background: #007BFF;
 }
 
