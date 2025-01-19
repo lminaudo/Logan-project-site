@@ -55,6 +55,11 @@ body {
   /* Add spacing from content above */
 }
 
+.resume-download {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
 .project-header {
   /* display: flex; */
   flex-wrap: wrap;
@@ -148,6 +153,16 @@ footer .social-links a:hover {
   color: #555;
 }
 
+.cta:hover {
+  background-color: rgb(150, 150, 150);
+  color: rgb(0, 0, 0);
+}
+
+.cta.secondary:hover {
+  background-color: rgb(150, 150, 150);
+  color: rgb(0, 0, 0);
+}
+
 .cta {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -156,10 +171,12 @@ footer .social-links a:hover {
   background-color: #007bff;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta.secondary {
   background-color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #skills {
@@ -315,11 +332,8 @@ a:hover {
 
 /* Header Styling */
 .main-header {
-  /* background-color: #1a1a1a; Dark background for contrast */
   color: #1a1a1a;
-  /* White text */
   padding: 20px 10px;
-  /* border-color: #222; */
   border-style: none none solid none;
   padding: 0.5rem;
   border-color: #1a1a1a;
@@ -333,7 +347,7 @@ a:hover {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  padding: 0.5rem; /* Adjusted padding */
+  padding: 0.45rem; /* Adjusted padding */
 }
 
 /* Logo container */
@@ -343,14 +357,14 @@ a:hover {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  height: auto; /* Constrain height naturally */
 }
 
 /* Logo image */
 .logo img {
   display: block; /* Removes inline spacing */
-  margin: 0; /* Remove any extra margins */
+  margin: -0.5rem; /* Remove any extra margins */
   padding: 0; /* Remove any extra padding */
+  height: 15rem;
 }
 
 /* Headline and Subheadline */
@@ -410,15 +424,15 @@ a:hover {
     gap: 0.75rem;
   }
   .container {
-    padding: 1rem; /* Increase padding for smaller screens */
+    /* padding: 1rem; Increase padding for smaller screens */
   }
 
   .logo img {
-    max-width: 14rem; /* Slightly smaller logo for tablets */
+    height: 13rem; /* Slightly smaller logo for tablets */
   }
 }
 @media (max-width: 480px) {
   .logo img {
-    max-width: 10rem; /* Further reduce logo size for mobile */
+    height: 13rem;
   }
 }
