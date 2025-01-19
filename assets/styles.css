@@ -175,8 +175,15 @@ footer .social-links a:hover {
 }
 
 .cta.secondary {
-  background-color: #555;
+  background-color: #2f65a7;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 #skills {
@@ -426,9 +433,6 @@ a:hover {
   .main-nav ul {
     flex-direction: column;
     gap: 0.75rem;
-  }
-  .container {
-    /* padding: 1rem; Increase padding for smaller screens */
   }
 
   .logo img {
