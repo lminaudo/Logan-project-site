@@ -24,25 +24,25 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Footer loaded successfully.");
     });
 
-    // const zoomanimation = document.querySelectorAll(".zoomanimation");
+    const zoomanimation = document.querySelectorAll(".zoomanimation");
 
-    // const isInViewport = (element) => {
-    //     const rect = element.getBoundingClientRect();
-    //     return rect.top < window.innerHeight && rect.bottom >= 0;
-    // };
+    const isInViewport = (element) => {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0;
+    };
 
-    // const animateProjects = () => {
-    //     zoomanimation.forEach((project) => {
-    //         if (isInViewport(project)) {
-    //             project.classList.add("visible");
-    //         }
-    //         else{
-    //          // project.classList.add("visible");
-    //             project.classList.remove("visible");
-    //         }
-    //     });
-    // };
+    const animateProjects = () => {
+        zoomanimation.forEach((project) => {
+            if (isInViewport(project)) {
+                project.classList.add("visible");
+            }
+            else{
+             project.classList.add("visible");
+                project.classList.remove("visible");
+            }
+        });
+    };
 
-    // animateProjects();
-    // window.addEventListener("scroll", animateProjects);
+    animateProjects();
+    window.addEventListener("scroll", animateProjects);
 });

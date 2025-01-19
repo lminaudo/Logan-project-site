@@ -21,16 +21,28 @@ body {
   margin: 1.25%;
 }
 
-/* .zoomanimation {
-    opacity: 0;
-    transform: scale(0.75);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+.zoomanimation {
+  opacity: 0;
+  transform: scale(0.75);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .zoomanimation.visible {
-    opacity: 1;
-    transform: scale(1);
-} */
+  opacity: 1;
+  transform: scale(1);
+}
+
+.logoanimation {
+  animation-iteration-count: infinite;
+  animation: rotateY 4s infinite linear;
+  height: 2em;
+}
+
+@keyframes rotateY {
+  to {
+    transform: rotateY(360deg);
+  }
+}
 
 .button {
   display: inline-block;
@@ -111,7 +123,7 @@ body {
 }
 
 .technologies li {
-  background: #007bff;
+  background: #2f65a7;
   color: #fff;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
@@ -126,7 +138,7 @@ footer {
 }
 
 footer .social-links a {
-  color: #007bff;
+  color: #2f65a7;
   text-decoration: none;
   margin: 0 0.5rem;
 }
@@ -168,7 +180,7 @@ footer .social-links a:hover {
   padding: 0.8rem 1.5rem;
   margin: 1rem;
   color: #fff;
-  background-color: #007bff;
+  background-color: #2f65a7;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -280,7 +292,7 @@ footer .social-links a:hover {
 }
 
 a {
-  color: #007bff;
+  color: #2f65a7;
   text-decoration: none;
   /* font-weight: bold; */
 }
@@ -416,7 +428,7 @@ a:hover {
 .main-nav a:hover {
   color: #fff;
   /* Highlight color for hover effect */
-  background: #007bff;
+  background: #2f65a7;
 }
 
 /* Responsive Design */
