@@ -156,7 +156,19 @@ body {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  padding: 0 0 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projects-list li {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.projects-list li:hover {
+  background-color: #ffcb05; /* Light blue background on hover */
+  color: #003366; /* Darker text color on hover */
 }
 
 .project-card {
@@ -193,8 +205,8 @@ body {
 }
 
 .technologies li {
-  background: #2f65a7;
-  color: #fff;
+  background: #ffcb05;
+  color: #003366;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -237,8 +249,8 @@ footer .social-links a:hover {
 }
 
 .cta:hover {
-  background-color: rgb(150, 150, 150);
-  color: rgb(0, 0, 0);
+  background-color: #ffcb05;
+  color: #2f65a7;
 }
 
 .cta.secondary:hover {
