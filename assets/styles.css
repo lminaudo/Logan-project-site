@@ -49,7 +49,7 @@ html {
 #hero .hero-content p {
   font-size: 1.25rem;
   margin: 1rem 0;
-  color: #555;
+  color: #333;
 }
 
 .cta {
@@ -61,14 +61,15 @@ html {
   border-radius: 10px;
   text-decoration: none;
   background-color: #1e90ff;
-  color: #fff;
+  color: #f5f5f5;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
 }
 
 .cta:hover {
+  transform: scale(1.1);
   background-color: #ffcc33;
-  color: #1e90ff;
+  color: #003366;
 }
 
 p {
@@ -197,7 +198,7 @@ body {
 
 .button:hover {
   background-color: #ffd700;
-  color: #1e90ff;
+  color: #003366;
 }
 
 .about-container {
@@ -299,7 +300,7 @@ body {
 
 .project-card p {
   margin: 1rem 0;
-  color: #555;
+  color: #333;
 }
 
 .technologies {
@@ -321,8 +322,8 @@ body {
 footer {
   text-align: center;
   padding: 0.2rem 0 0.5rem 0;
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: #333;
+  color: #f5f5f5;
 }
 
 footer .social-links {
@@ -336,7 +337,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #fff;
+  color: #f5f5f5;
 }
 
 #skills,
@@ -418,18 +419,22 @@ footer .social-links a:hover {
 }
 
 .main-nav a {
-  color: #1a1a1a;
+  color: #333;
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bolder;
   margin: 0 1.5rem;
   border-radius: 0.25rem;
   padding: 0 0.5rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  display: inline-block; /* Ensure transform works properly */
 }
 
 .main-nav a:hover {
-  color: #fff;
-  background: #1e90ff;
+  background: #ffd700;
+  color: #333;
+  transform: scale(1.1);
 }
 
 .logo {
