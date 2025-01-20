@@ -505,6 +505,10 @@ a:hover {
   background: #2f65a7;
 }
 
+.explore p {
+  text-align: left;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .headline {
