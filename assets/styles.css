@@ -78,13 +78,13 @@ body {
 }
 
 .two-column > .main {
-  flex: 3 1 75%; /* 75% width for the main content */
+  flex: 3 1 25%; /* 75% width for the main content */
   min-width: 280px; /* Ensures it doesn't shrink too much */
   box-sizing: border-box;
 }
 
 .two-column > .secondary {
-  flex: 1 1 25%; /* 25% width for the secondary content */
+  flex: 1 1 75%; /* 25% width for the secondary content */
   min-width: 200px; /* Ensures it doesn't shrink too much */
   box-sizing: border-box;
 }
