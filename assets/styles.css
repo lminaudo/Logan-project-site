@@ -12,7 +12,12 @@ html {
   background: linear-gradient(to bottom right, rgb(120, 120, 120), white);
   min-height: 100%;
 }
-
+h2 {
+  color: #2f65a7;
+  padding: 0;
+  margin: 1rem;
+  font-size: 1.5em;
+}
 h5.headline {
   font-weight: normal;
 }
@@ -127,6 +132,7 @@ body {
 .resume-download {
   text-align: center;
   padding: 1rem 2rem;
+  font-size: 1.1rem;
 }
 
 .project-header {
@@ -135,6 +141,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 1rem;
+  font-size: 1.15rem;
 }
 
 .project-header h2 {
@@ -160,6 +167,7 @@ body {
   max-width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.9s ease;
+  font-size: 1.1rem;
 }
 
 .project-card:hover {
@@ -168,7 +176,7 @@ body {
 
 .project-card h3 {
   margin-top: 0;
-  color: #333;
+  color: #2f65a7;
 }
 
 .project-card p {
@@ -200,9 +208,10 @@ footer {
 }
 
 footer .social-links a {
-  color: #2f65a7;
+  color: #fff;
   text-decoration: none;
   margin: 0 0.5rem;
+  font-weight: bold;
 }
 
 footer .social-links a:hover {
@@ -263,6 +272,7 @@ footer .social-links a:hover {
   text-align: center;
   padding: 1rem 1rem 0;
   color: #333;
+  font-size: 1.15rem;
 }
 
 .skills-grid {
@@ -301,6 +311,7 @@ footer .social-links a:hover {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  font-size: 1.15rem;
 }
 
 .about-container h2 {
@@ -328,6 +339,7 @@ footer .social-links a:hover {
 .about-details h3 {
   font-size: 1.8rem;
   margin-top: 2rem;
+  color: #2f65a7;
 }
 
 .expertise-list,
@@ -336,12 +348,12 @@ footer .social-links a:hover {
   padding: 0;
   margin: 1rem 0;
   text-align: left;
+  font-size: 1.15rem;
 }
 
 .expertise-list li,
 .projects-list li {
   margin: 0.5rem 0;
-  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -351,7 +363,6 @@ footer .social-links a:hover {
 
 .projects-list li em {
   color: #555;
-  font-size: 0.9rem;
 }
 
 a {
@@ -378,7 +389,7 @@ a:hover {
 }
 
 #contact p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-bottom: 1rem;
 }
 
@@ -388,11 +399,11 @@ a:hover {
   margin: 0 auto;
   max-width: 600px;
   text-align: left;
+  font-size: 1.15rem;
 }
 
 .contact-list li {
   margin: 1rem 0;
-  font-size: 1.1rem;
   display: flex;
   align-items: center;
   gap: 1rem;

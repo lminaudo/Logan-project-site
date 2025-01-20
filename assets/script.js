@@ -30,10 +30,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const drivingleftanimation = document.querySelectorAll(".driving-left");
 
 
-    const isInViewport = (element) => {
+    const isInViewport = (element, threshold = 0) => {
+        if (!element) return false; // Ensure the element exists
+        
         const rect = element.getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom >= 0;
-    };
+        
+        // Include a threshold for partial visibility
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      
+        return (
+          rect.top + threshold < windowHeight && // Top edge is visible with threshold
+          rect.bottom - threshold >= 0 &&       // Bottom edge is visible with threshold
+          rect.left + threshold < windowWidth && // Left edge is visible with threshold
+          rect.right - threshold >= 0            // Right edge is visible with threshold
+        );
+      };
 
     const animateProjects = () => {
         zoomanimation.forEach((project) => {
