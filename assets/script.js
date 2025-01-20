@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const zoomanimation = document.querySelectorAll(".zoomanimation");
+    const drivinganimation = document.querySelectorAll(".driving");
+    const rotateanimation = document.querySelectorAll(".rotate");
+    const drivingleftanimation = document.querySelectorAll(".driving-left");
+
 
     const isInViewport = (element) => {
         const rect = element.getBoundingClientRect();
@@ -42,7 +46,50 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     };
+    const animateDriving = () => {
+        drivinganimation.forEach((project) => {
+            if (isInViewport(project)) {
+                project.classList.add("visible");
+            }
+            else{
+                project.classList.add("visible");
+                project.classList.remove("visible");
+            }
+        });
+    };
+
+    const animateDrivingLeft = () => {
+        drivingleftanimation.forEach((project) => {
+            if (isInViewport(project)) {
+                project.classList.add("visible");
+            }
+            else{
+                project.classList.add("visible");
+                project.classList.remove("visible");
+            }
+        });
+    };
+
+    const animateRotation = () => {
+        rotateanimation.forEach((project) => {
+            if (isInViewport(project)) {
+                project.classList.add("visible");
+            }
+            else{
+                project.classList.add("visible");
+                project.classList.remove("visible");
+            }
+        });
+    };
 
     animateProjects();
-    window.addEventListener("scroll", animateProjects);
+    animateDriving();
+    animateRotation();
+    animateDrivingLeft();
+    window.addEventListener("scroll", () => {
+        animateProjects();
+        animateDriving();
+        animateDrivingLeft();
+        animateRotation();
+    });
 });

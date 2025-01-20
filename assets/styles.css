@@ -32,6 +32,63 @@ body {
   transform: scale(1);
 }
 
+.rotate {
+  opacity: 0;
+  transform: rotate(-360deg) scale(0.5);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.rotate.visible {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.driving {
+  opacity: 0;
+  transform: translate(-300px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.driving.visible {
+  opacity: 1;
+  transform: translate(0px);
+}
+
+.driving-left {
+  opacity: 0;
+  transform: translate(300px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.driving-left.visible {
+  opacity: 1;
+  transform: translate(0px);
+}
+
+.two-column {
+  display: flex;
+  gap: 1rem; /* Space between the columns */
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.two-column > .main {
+  flex: 3 1 75%; /* 75% width for the main content */
+  min-width: 280px; /* Ensures it doesn't shrink too much */
+  box-sizing: border-box;
+}
+
+.two-column > .secondary {
+  flex: 1 1 25%; /* 25% width for the secondary content */
+  min-width: 200px; /* Ensures it doesn't shrink too much */
+  box-sizing: border-box;
+}
+.two-column img {
+  width: 12rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
 .logoanimation {
   animation-iteration-count: infinite;
   animation: rotateY 4s infinite linear;
@@ -102,6 +159,11 @@ body {
   padding: 1.5rem;
   max-width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.9s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
 }
 
 .project-card h3 {
@@ -448,6 +510,14 @@ a:hover {
 
   .logo img {
     height: 13rem; /* Slightly smaller logo for tablets */
+  }
+  .two-column {
+    flex-direction: column; /* Stacks items vertically */
+  }
+
+  .two-column > .main,
+  .two-column > .secondary {
+    flex: 1 1 100%; /* Full width for both columns */
   }
 }
 @media (max-width: 480px) {
