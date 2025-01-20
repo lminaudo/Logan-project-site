@@ -143,7 +143,7 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .two-column > .main {
@@ -351,7 +351,7 @@ footer .social-links a:hover {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 8%;
   flex-wrap: wrap;
   border-radius: 15px;
   margin: 2rem auto;
@@ -372,7 +372,10 @@ footer .social-links a:hover {
 
 .skill img {
   width: 6rem;
-  margin-bottom: 0.5rem;
+  margin-block-start: 0.5em;
+}
+.skill p {
+  margin-block-end: 0.5em;
 }
 
 .contact-list {
