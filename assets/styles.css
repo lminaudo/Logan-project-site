@@ -11,6 +11,7 @@
   display: block; /* Ensure the element retains its block-level behavior */
   text-align: left; /* Default text alignment (can be adjusted) */
   box-sizing: border-box; /* Include padding in the element's width calculation */
+  justify-content: center;
 }
 
 em {
@@ -23,6 +24,8 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
 html {
@@ -34,19 +37,18 @@ html {
 }
 
 #hero {
+  display: flex;
   text-align: center;
-  padding: 3rem 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
+  justify-content: center; /* Center content vertically */
 }
 
-#hero .hero-content h1 {
+#hero h1 {
   font-size: 2.3rem;
   margin: 1rem;
   color: #333;
 }
 
-#hero .hero-content p {
+#hero p {
   font-size: 1.25rem;
   margin: 1rem 0;
   color: #333;
@@ -141,7 +143,7 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .two-column > .main {
