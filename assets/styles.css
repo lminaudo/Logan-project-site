@@ -14,6 +14,12 @@
   justify-content: center;
   overflow-x: hidden;
 }
+.page-header {
+  margin: 0 auto; /* Center content horizontally */
+  text-align: center; /* Default text alignment (can be adjusted) */
+  justify-content: center;
+  overflow-x: hidden;
+}
 
 em {
   margin-right: 5px; /* Add space after the colon */
@@ -305,7 +311,7 @@ body {
 
 .project-card h3 {
   margin-top: 0;
-  color: #555;
+  color: #00408a;
   font-weight: bolder;
 }
 
