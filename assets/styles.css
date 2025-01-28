@@ -162,7 +162,6 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .two-column > .main {
@@ -186,7 +185,7 @@ body {
 }
 
 .two-column img {
-  width: 12rem;
+  width: 13rem;
   max-width: 100%; /* Ensure images scale down responsively */
   margin-bottom: 0.25rem;
 }
